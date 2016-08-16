@@ -27,7 +27,6 @@ html {
   line-height: 1;
 }
 
-
 ol, ul {
   list-style: none;
 }
@@ -57,4 +56,20 @@ a img {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
+}
+
+header {
+  background-color: #fe9;
+}
+
+aside {
+  background-color: #ef9;
+}
+
+main {
+  background-color: #9ef;
+}
+
+footer {
+  background-color: #db20bf;
 }

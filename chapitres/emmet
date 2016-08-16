@@ -1,0 +1,36 @@
+Body
+header+aside+main+footer
+
+
+Header reseaux sociaux
+h1{Herbauges}+ul.reseaux-sociaux>li*3>a.rs-
+
+
+footer
+div*>img[src="imgs/holder.png"]+h1{$#}+p>lorem10^a[href="#"]>i+{en savoir plus}
+
+
+aside
+section:
+div*>img[src="imgs/holder.png"]+h1{$#}+p>lorem10^a[href="#"]>i+{en savoir plus}
+
+formulaire:
+form>fieldset>legend{Lettre d'information}+p{Souscrivez à notre lettre d'information}+label+input[type="text"]+button{Soumettre}
+
+
+Main:
+section>article*4>img[src="imgs/expo-.png"]+h1>lorem8^p>lorem
+
+
+section2
+section#tabs
+
+ul>li*3>a[href="#tabs-$"]{Choix}
+
+#tabs-$*3>p{contenu de l'onglet $$}
+
+<div id="tabs-1">:
+
+ul>li[itemscope itemtype="http://schema.org/Painting"]*3>h1>lorem8^p>lorem10
+
+:</div>
