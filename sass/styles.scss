@@ -3,20 +3,45 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "compass";
+//@import "compass/reset";
+@import "susy";
 
+$susy: (
+  columns: 24,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+body {
+    @include container(80%);
+}
 header {
     background-color: #fe9;
 }
 
+header, footer {
+    @include span(24 of 24);
+}
 aside {
     background-color: #ef9;
+}
+
+aside {
+    @include span(8 of 24);
 }
 
 main {
     background-color: #9ef;
 }
 
+main {
+    @include span(16 of 24 last);
+}
 footer {
     background-color: #db20bf;
+}
+footer {
+    clear: both;
 }
