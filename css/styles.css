@@ -31,30 +31,31 @@ aside {
   background-color: #ef9;
 }
 
-aside {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 33.33333%;
-  float: left;
-  padding-left: 0.41667%;
-  padding-right: 0.41667%;
-}
-
 main {
   background-color: #9ef;
 }
 
-main {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  width: 66.66667%;
-  float: right;
-  padding-left: 0.41667%;
-  padding-right: 0.41667%;
-}
+@media (min-width: 48em) {
+  main {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 66.66667%;
+    float: right;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+  }
 
+  aside {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.41667%;
+    padding-right: 0.41667%;
+  }
+}
 footer {
   background-color: #db20bf;
 }

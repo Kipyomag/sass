@@ -6,6 +6,12 @@
 @import "compass";
 //@import "compass/reset";
 @import "susy";
+@import "breakpoint";
+
+$mobile: 20em;
+$tablet: 48em;
+$desktop: 60em;
+$widescreen: 83em;
 
 $susy: (
   columns: 24,
@@ -28,17 +34,23 @@ aside {
     background-color: #ef9;
 }
 
-aside {
-    @include span(8 of 24);
-}
+
 
 main {
     background-color: #9ef;
 }
 
-main {
-    @include span(16 of 24 last);
+@include breakpoint($tablet) {
+    main {
+        @include span(16 of 24 last);
+    }
+    aside {
+        @include span(8 of 24);
+    }
 }
+
+
+
 footer {
     background-color: #db20bf;
 }
