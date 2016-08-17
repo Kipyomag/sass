@@ -1,0 +1,21 @@
+body > header {
+    padding: 32px 0;
+    position: relative;
+    h1{
+        text-indent: -9999px;
+        background-image: image-url('logo-label.png');
+        width: 560px;
+        height: 280px;
+        float: left;
+    }
+    ul.reseaux-sociaux{
+        @include horizontal-list;
+        float: right;
+    }
+    [role="navigation"]{
+        @include horizontal-list;
+        position: absolute;
+        right: 0;
+        bottom: 32px;
+    }
+}

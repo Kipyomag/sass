@@ -1,0 +1,18 @@
+
+
+body {
+    @include container(80%);
+}
+
+header, footer {
+    @include span(24 of 24);
+}
+
+@include breakpoint($tablet) {
+    main {
+        @include span(16 of 24 last);
+    }
+    aside {
+        @include span(8 of 24);
+    }
+}

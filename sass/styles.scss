@@ -1,59 +1,29 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass";
-//@import "compass/reset";
 @import "susy";
 @import "breakpoint";
 
-$mobile: 20em;
-$tablet: 48em;
-$desktop: 60em;
-$widescreen: 83em;
+@import "variables";
+@import "layout";
 
-$susy: (
-  columns: 24,
-  gutters: 1/4,
-  math: fluid,
-  output: float,
-  gutter-position: inside,
-);
-body {
-    @include container(80%);
-}
+@import "header";
+@import "aside";
+@import "main";
+@import "footer";
+
+
 header {
     background-color: #fe9;
 }
 
-header, footer {
-    @include span(24 of 24);
-}
 aside {
     background-color: #ef9;
 }
-
-
 
 main {
     background-color: #9ef;
 }
 
-@include breakpoint($tablet) {
-    main {
-        @include span(16 of 24 last);
-    }
-    aside {
-        @include span(8 of 24);
-    }
-}
-
-
-
 footer {
     background-color: #db20bf;
-}
-footer {
-    clear: both;
 }

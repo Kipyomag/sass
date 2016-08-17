@@ -1,0 +1,42 @@
+// Travailler les sprites
+$icones-layout:smart;
+$icones-sprite-dimensions:true;
+@import "icones/*.png";
+
+
+//Définir les points de ruptures et valeurs susy
+
+$mobile: 20em;
+$tablet: 48em;
+$desktop: 60em;
+$widescreen: 83em;
+
+$susy: (
+  columns: 24,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);
+
+
+// Travailler les Typos
+@import url('http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Actor);
+
+$typo-titre:'Actor', sans-serif;
+$typo-texte:'PT Sans', sans-serif;
+
+// Définir les couleurs et nuanciers
+
+$couleur-font: rgb(24,146,191);
+$couleur-dark: lighten(rgb(0,0,0), 30%);
+$couleur-grey: rgb(153,153,153);
+$couleur-light: transparentize($couleur-grey, 0.8);
+$couleur-white: white;
+
+//  Valeur Compass par défaut
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+@include establish-baseline;
